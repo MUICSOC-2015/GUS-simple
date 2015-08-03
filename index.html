@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <script>
+        window.$ = window.jQuery = require('./bower_components/jquery/dist/jquery.min.js');
+        ytdl = require('ytdl-core');
+        fs = require('fs');
+    </script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="ui.js"></script>
+
+  <head>
+      <title>Hello World!</title>
+  </head>
+  <body>
+      <h1> Test UI</h1>
+      <div>
+          <input type="number" id="x" value="0"></input>
+          <input type="number" id="y" value="0"></input>
+      </div>
+      <div>
+          Output: <span id="output"></span>
+      </div>
+      <div>
+          <button onclick="addme()">Add!</button>
+          <button onclick="alertme()">Alert!</button>
+          <button onclick="trustme()">3 and 5</button>
+          <button onclick="loadme()">load a video</button>
+      </div>
+  </body>
+</html>
